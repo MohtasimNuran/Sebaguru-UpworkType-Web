@@ -1,0 +1,169 @@
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+F:\Nuran\Office\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+F:\Nuran\Office\Updated\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+H:\C#\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+H:\C#\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+H:\C#\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+H:\C#\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+H:\C#\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+H:\C#\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+H:\C#\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+E:\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+E:\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+E:\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+E:\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+E:\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+E:\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+E:\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+E:\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+E:\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+E:\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+H:\C#\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.FaceBookAPI.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+H:\C#\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+H:\C#\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.GoogleAPI.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.FaceBookAPI.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.GoogleAPI.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+C:\Users\mohta\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+D:\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.FaceBookAPI.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\ASPSnippets.GoogleAPI.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+D:\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+D:\Google Drive\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+C:\Users\ASUS\Desktop\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+C:\Users\mohta\Desktop\UpWorkWebModifiedBySabab\UpWorkWeb\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+C:\Users\mohta\Desktop\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll.config
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\UpWorkWeb.pdb
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\EntityFramework.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Owin.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\EntityFramework.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\EntityFramework.SqlServer.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\bin\Newtonsoft.Json.xml
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.csprojResolveAssemblyReference.cache
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.dll
+D:\Doing It Now\Riaz Vai 40\UpWorkWeb\UpWorkWeb\obj\Debug\UpWorkWeb.pdb

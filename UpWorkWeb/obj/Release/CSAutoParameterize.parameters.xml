@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="UpWorkDBEntities-Web.config Connection String" description="UpWorkDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/;&#xD;&#xA;         provider=System.Data.SqlClient;&#xD;&#xA;      provider connection string=&quot;data source=sql7002.site4now.net;&#xD;&#xA;      initial catalog=DB_A2CA7C_upworktry;&#xD;&#xA;      persist security info=True;&#xD;&#xA;      user id=DB_A2CA7C_upworktry_admin;&#xD;&#xA;      password=sadikasneha1366;&#xD;&#xA;      MultipleActiveResultSets=True;&#xD;&#xA;      App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mohta\\Desktop\\UpWorkWeb\\UpWorkWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UpWorkDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

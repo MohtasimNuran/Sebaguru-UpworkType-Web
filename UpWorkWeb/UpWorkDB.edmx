@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="UpWorkDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AppliedJobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerId" Type="int" />
+          <Property Name="PostJobId" Type="int" />
+          <Property Name="YourSay" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerCategoryId" Type="int" />
+          <Property Name="HouseTutorClassPlay-5" Type="varchar(max)" />
+          <Property Name="HouseTutorClass6-8" Type="varchar(max)" />
+          <Property Name="HouseTutorClass9-10" Type="varchar(max)" />
+          <Property Name="HouseTutorClass11-12" Type="varchar(max)" />
+          <Property Name="HouseTutorPhysics" Type="varchar(max)" />
+          <Property Name="HouseTutorMath" Type="varchar(max)" />
+          <Property Name="HouseTutorChemistry" Type="varchar(max)" />
+          <Property Name="HouseTutorBangla" Type="varchar(max)" />
+          <Property Name="HouseTutorEnglish" Type="varchar(max)" />
+          <Property Name="HouseTutorICT" Type="varchar(max)" />
+          <Property Name="HouseTutorAccounting" Type="varchar(max)" />
+          <Property Name="DataEntryBasicLevel" Type="varchar(max)" />
+          <Property Name="DataEntrySecondaryLevel" Type="varchar(max)" />
+          <Property Name="DataEntryHigherLevel" Type="varchar(max)" />
+          <Property Name="EventManagerCorporateMeeting" Type="varchar(max)" />
+          <Property Name="EventManagerFamilyMeeting" Type="varchar(max)" />
+          <Property Name="EventManagerParty" Type="varchar(max)" />
+          <Property Name="PhotographyPortrait" Type="varchar(max)" />
+          <Property Name="PhotographyParty" Type="varchar(max)" />
+          <Property Name="PhotographyFamily" Type="varchar(max)" />
+          <Property Name="PhotographyInstitution" Type="varchar(max)" />
+          <Property Name="GraphicsDesignPhotoshop" Type="varchar(max)" />
+          <Property Name="GraphicsDesignIllustrator" Type="varchar(max)" />
+          <Property Name="TransporterBothWay" Type="varchar(max)" />
+          <Property Name="TransporterOneWay" Type="varchar(max)" />
+          <Property Name="AdditionalDirectorFilm" Type="varchar(max)" />
+          <Property Name="AdditionalDirectorShortFilm" Type="varchar(max)" />
+          <Property Name="AdditionalDirectorDocumentary" Type="varchar(max)" />
+          <Property Name="ConsultantBusinessTransformation" Type="varchar(max)" />
+          <Property Name="ConsultantEngineeringConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantEducationalConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantHumanResourcesConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantImmigrationConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantInternetConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantInformation-TechnologyConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantInterimManagers" Type="varchar(max)" />
+          <Property Name="ConsultantMarketingConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantProcessConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantPublic-relationsConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantPerformanceConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantSalesConsultants" Type="varchar(max)" />
+          <Property Name="ConsultantStrategyConsultants" Type="varchar(max)" />
+          <Property Name="Consultant3DConsultants" Type="varchar(max)" />
+          <Property Name="WebDesignStatic" Type="varchar(max)" />
+          <Property Name="WebDesignDynamic" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="CompleteJob">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerCompleteId" Type="int" />
+          <Property Name="PostJobCompleteId" Type="int" />
+          <Property Name="Review" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="JobProviderCompany">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar(max)" />
+          <Property Name="CompanyEmail" Type="varchar(max)" />
+          <Property Name="Password" Type="varchar(max)" />
+          <Property Name="RegistrationNumber" Type="varchar(max)" />
+          <Property Name="Phone" Type="varchar(max)" />
+          <Property Name="Country" Type="varchar(max)" />
+          <Property Name="CompanyCode" Type="varchar(max)" />
+          <Property Name="RegistrationCopy" Type="varchar(max)" />
+          <Property Name="CompanyWebsite" Type="varchar(max)" />
+          <Property Name="RegDate" Type="varchar(max)" />
+          <Property Name="CompanyLogo" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="PaymentProcedure" Type="varchar(max)" />
+          <Property Name="Rate" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="JobProviderPersonal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="varchar(max)" />
+          <Property Name="Email" Type="varchar(max)" />
+          <Property Name="Password" Type="varchar(max)" />
+          <Property Name="NID" Type="varchar(max)" />
+          <Property Name="PassportNumber" Type="varchar(max)" />
+          <Property Name="BirthDate" Type="varchar(max)" />
+          <Property Name="RegDate" Type="varchar(max)" />
+          <Property Name="Phone" Type="varchar(max)" />
+          <Property Name="Gender" Type="varchar(max)" />
+          <Property Name="Nationnality" Type="varchar(max)" />
+          <Property Name="Picture" Type="varchar(max)" />
+          <Property Name="JobProviderCode" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="PaymentProcedure" Type="varchar(max)" />
+          <Property Name="Rate" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="JobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Full Name" Type="varchar(max)" />
+          <Property Name="Email" Type="varchar(max)" />
+          <Property Name="Birthdate" Type="varchar(max)" />
+          <Property Name="Phone" Type="varchar(max)" />
+          <Property Name="Gender" Type="varchar(max)" />
+          <Property Name="Nationnality" Type="varchar(max)" />
+          <Property Name="Picture" Type="varchar(max)" />
+          <Property Name="Category" Type="varchar(max)" />
+          <Property Name="CommentBox" Type="varchar(max)" />
+          <Property Name="JobSeekerCode" Type="varchar(max)" />
+          <Property Name="RegDate" Type="varchar(max)" />
+          <Property Name="Password" Type="varchar(max)" />
+          <Property Name="CategoryTryId" Type="int" />
+          <Property Name="AvailableStart" Type="varchar(max)" />
+          <Property Name="AvailableEnd" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="PaymentProcedure" Type="varchar(max)" />
+          <Property Name="Rate" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerMessageId" Type="int" />
+          <Property Name="JobProviderPersonalMessageId" Type="int" />
+          <Property Name="JobProviderCompanyMessageId" Type="int" />
+          <Property Name="Msg" Type="varchar(max)" />
+          <Property Name="Status" Type="varchar(max)" />
+          <Property Name="Sender" Type="varchar(max)" />
+          <Property Name="Receiver" Type="varchar(max)" />
+          <Property Name="SendingDate" Type="datetime2" Precision="7" />
+        </EntityType>
+        <EntityType Name="Notification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerNotificationId" Type="int" />
+          <Property Name="PostJobNotificationId" Type="int" />
+          <Property Name="Comments" Type="varchar(max)" />
+          <Property Name="Status" Type="varchar(max)" />
+          <Property Name="PostedDate" Type="datetime2" Precision="7" />
+        </EntityType>
+        <EntityType Name="PostJob">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Category" Type="varchar(max)" />
+          <Property Name="JobResponsibility" Type="varchar(max)" />
+          <Property Name="Message" Type="varchar(max)" />
+          <Property Name="DeadLineDate" Type="datetime2" Precision="7" />
+          <Property Name="CoverPhoto" Type="varchar(max)" />
+          <Property Name="Payment" Type="varchar(max)" />
+          <Property Name="RegDate" Type="datetime2" Precision="7" />
+          <Property Name="PersonalId" Type="int" />
+          <Property Name="CompanyId" Type="int" />
+          <Property Name="JobCode" Type="varchar(max)" />
+          <Property Name="Per" Type="varchar(max)" />
+          <Property Name="JobTitle" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="SelectedJobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobSeekerSelectedId" Type="int" />
+          <Property Name="PostJobSelectedId" Type="int" />
+          <Property Name="ReviewForIncomplete" Type="varchar(max)" />
+          <Property Name="ReviewForComplete" Type="varchar(max)" />
+          <Property Name="Status" Type="varchar(max)" />
+        </EntityType>
+        <Association Name="FK_AppliedJobSeeker_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="AppliedJobSeeker" Type="Self.AppliedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AppliedJobSeeker">
+              <PropertyRef Name="JobSeekerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AppliedJobSeeker_PostJob">
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="0..1" />
+          <End Role="AppliedJobSeeker" Type="Self.AppliedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AppliedJobSeeker">
+              <PropertyRef Name="PostJobId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Category_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="Category" Type="Self.Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Category">
+              <PropertyRef Name="JobSeekerCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CompleteJob_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="CompleteJob" Type="Self.CompleteJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CompleteJob">
+              <PropertyRef Name="JobSeekerCompleteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CompleteJob_PostJob">
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="0..1" />
+          <End Role="CompleteJob" Type="Self.CompleteJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CompleteJob">
+              <PropertyRef Name="PostJobCompleteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobSeeker_ToTable">
+          <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="JobSeeker">
+              <PropertyRef Name="CategoryTryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_JobProviderCompany">
+          <End Role="JobProviderCompany" Type="Self.JobProviderCompany" Multiplicity="0..1" />
+          <End Role="Message" Type="Self.Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobProviderCompanyMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_JobProviderPersonal">
+          <End Role="JobProviderPersonal" Type="Self.JobProviderPersonal" Multiplicity="0..1" />
+          <End Role="Message" Type="Self.Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderPersonal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobProviderPersonalMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="Message" Type="Self.Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobSeekerMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notification_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="JobSeekerNotificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notification_PostJob">
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="0..1" />
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="PostJobNotificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostJob_JobProviderCompany">
+          <End Role="JobProviderCompany" Type="Self.JobProviderCompany" Multiplicity="0..1" />
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostJob">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostJob_JobProviderPersonal">
+          <End Role="JobProviderPersonal" Type="Self.JobProviderPersonal" Multiplicity="0..1" />
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderPersonal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostJob">
+              <PropertyRef Name="PersonalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SelectedJobSeeker_JobSeeker">
+          <End Role="JobSeeker" Type="Self.JobSeeker" Multiplicity="0..1" />
+          <End Role="SelectedJobSeeker" Type="Self.SelectedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SelectedJobSeeker">
+              <PropertyRef Name="JobSeekerSelectedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SelectedJobSeeker_PostJob">
+          <End Role="PostJob" Type="Self.PostJob" Multiplicity="0..1" />
+          <End Role="SelectedJobSeeker" Type="Self.SelectedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SelectedJobSeeker">
+              <PropertyRef Name="PostJobSelectedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="UpWorkDBModelStoreContainer">
+          <EntitySet Name="AppliedJobSeeker" EntityType="Self.AppliedJobSeeker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompleteJob" EntityType="Self.CompleteJob" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobProviderCompany" EntityType="Self.JobProviderCompany" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobProviderPersonal" EntityType="Self.JobProviderPersonal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobSeeker" EntityType="Self.JobSeeker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Message" EntityType="Self.Message" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PostJob" EntityType="Self.PostJob" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SelectedJobSeeker" EntityType="Self.SelectedJobSeeker" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AppliedJobSeeker_JobSeeker" Association="Self.FK_AppliedJobSeeker_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeeker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AppliedJobSeeker_PostJob" Association="Self.FK_AppliedJobSeeker_PostJob">
+            <End Role="PostJob" EntitySet="PostJob" />
+            <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeeker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Category_JobSeeker" Association="Self.FK_Category_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="Category" EntitySet="Category" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CompleteJob_JobSeeker" Association="Self.FK_CompleteJob_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="CompleteJob" EntitySet="CompleteJob" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CompleteJob_PostJob" Association="Self.FK_CompleteJob_PostJob">
+            <End Role="PostJob" EntitySet="PostJob" />
+            <End Role="CompleteJob" EntitySet="CompleteJob" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobSeeker_ToTable" Association="Self.FK_JobSeeker_ToTable">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_JobProviderCompany" Association="Self.FK_Message_JobProviderCompany">
+            <End Role="JobProviderCompany" EntitySet="JobProviderCompany" />
+            <End Role="Message" EntitySet="Message" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_JobProviderPersonal" Association="Self.FK_Message_JobProviderPersonal">
+            <End Role="JobProviderPersonal" EntitySet="JobProviderPersonal" />
+            <End Role="Message" EntitySet="Message" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_JobSeeker" Association="Self.FK_Message_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="Message" EntitySet="Message" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notification_JobSeeker" Association="Self.FK_Notification_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="Notification" EntitySet="Notification" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notification_PostJob" Association="Self.FK_Notification_PostJob">
+            <End Role="PostJob" EntitySet="PostJob" />
+            <End Role="Notification" EntitySet="Notification" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostJob_JobProviderCompany" Association="Self.FK_PostJob_JobProviderCompany">
+            <End Role="JobProviderCompany" EntitySet="JobProviderCompany" />
+            <End Role="PostJob" EntitySet="PostJob" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostJob_JobProviderPersonal" Association="Self.FK_PostJob_JobProviderPersonal">
+            <End Role="JobProviderPersonal" EntitySet="JobProviderPersonal" />
+            <End Role="PostJob" EntitySet="PostJob" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SelectedJobSeeker_JobSeeker" Association="Self.FK_SelectedJobSeeker_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeeker" />
+            <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeeker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SelectedJobSeeker_PostJob" Association="Self.FK_SelectedJobSeeker_PostJob">
+            <End Role="PostJob" EntitySet="PostJob" />
+            <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeeker" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UpWorkDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="JobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Full_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Birthdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nationnality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CommentBox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="JobSeekerCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AppliedJobSeekers" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker" FromRole="JobSeeker" ToRole="AppliedJobSeeker" />
+          <NavigationProperty Name="SelectedJobSeekers" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker" FromRole="JobSeeker" ToRole="SelectedJobSeeker" />
+          <NavigationProperty Name="CompleteJobs" Relationship="UpWorkDBModel.FK_CompleteJob_JobSeeker" FromRole="JobSeeker" ToRole="CompleteJob" />
+          <NavigationProperty Name="Notifications" Relationship="UpWorkDBModel.FK_Notification_JobSeeker" FromRole="JobSeeker" ToRole="Notification" />
+          <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobSeeker" FromRole="JobSeeker" ToRole="Message" />
+          <NavigationProperty Name="Categories" Relationship="UpWorkDBModel.FK_Category_JobSeeker" FromRole="JobSeeker" ToRole="Category" />
+          <Property Name="CategoryTryId" Type="Int32" />
+          <NavigationProperty Name="Category1" Relationship="UpWorkDBModel.FK_JobSeeker_ToTable" FromRole="JobSeeker" ToRole="Category" />
+          <Property Name="AvailableStart" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="AvailableEnd" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="UpWorkDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="JobSeekers" EntityType="Self.JobSeeker" />
+          <EntitySet Name="JobProviderPersonals" EntityType="UpWorkDBModel.JobProviderPersonal" />
+          <EntitySet Name="JobProviderCompanies" EntityType="UpWorkDBModel.JobProviderCompany" />
+          <EntitySet Name="PostJobs" EntityType="UpWorkDBModel.PostJob" />
+          <AssociationSet Name="FK_PostJob_JobProviderCompany" Association="UpWorkDBModel.FK_PostJob_JobProviderCompany">
+            <End Role="JobProviderCompany" EntitySet="JobProviderCompanies" />
+            <End Role="PostJob" EntitySet="PostJobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PostJob_JobProviderPersonal" Association="UpWorkDBModel.FK_PostJob_JobProviderPersonal">
+            <End Role="JobProviderPersonal" EntitySet="JobProviderPersonals" />
+            <End Role="PostJob" EntitySet="PostJobs" />
+          </AssociationSet>
+          <EntitySet Name="AppliedJobSeekers" EntityType="UpWorkDBModel.AppliedJobSeeker" />
+          <AssociationSet Name="FK_AppliedJobSeeker_JobSeeker" Association="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeekers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AppliedJobSeeker_PostJob" Association="UpWorkDBModel.FK_AppliedJobSeeker_PostJob">
+            <End Role="PostJob" EntitySet="PostJobs" />
+            <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeekers" />
+          </AssociationSet>
+          <EntitySet Name="SelectedJobSeekers" EntityType="UpWorkDBModel.SelectedJobSeeker" />
+          <AssociationSet Name="FK_SelectedJobSeeker_JobSeeker" Association="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeekers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SelectedJobSeeker_PostJob" Association="UpWorkDBModel.FK_SelectedJobSeeker_PostJob">
+            <End Role="PostJob" EntitySet="PostJobs" />
+            <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeekers" />
+          </AssociationSet>
+          <EntitySet Name="CompleteJobs" EntityType="UpWorkDBModel.CompleteJob" />
+          <AssociationSet Name="FK_CompleteJob_JobSeeker" Association="UpWorkDBModel.FK_CompleteJob_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="CompleteJob" EntitySet="CompleteJobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CompleteJob_PostJob" Association="UpWorkDBModel.FK_CompleteJob_PostJob">
+            <End Role="PostJob" EntitySet="PostJobs" />
+            <End Role="CompleteJob" EntitySet="CompleteJobs" />
+          </AssociationSet>
+          <EntitySet Name="Notifications" EntityType="UpWorkDBModel.Notification" />
+          <AssociationSet Name="FK_Notification_JobSeeker" Association="UpWorkDBModel.FK_Notification_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="Notification" EntitySet="Notifications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notification_PostJob" Association="UpWorkDBModel.FK_Notification_PostJob">
+            <End Role="PostJob" EntitySet="PostJobs" />
+            <End Role="Notification" EntitySet="Notifications" />
+          </AssociationSet>
+          <EntitySet Name="Messages" EntityType="UpWorkDBModel.Message" />
+          <AssociationSet Name="FK_Message_JobProviderCompany" Association="UpWorkDBModel.FK_Message_JobProviderCompany">
+            <End Role="JobProviderCompany" EntitySet="JobProviderCompanies" />
+            <End Role="Message" EntitySet="Messages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_JobProviderPersonal" Association="UpWorkDBModel.FK_Message_JobProviderPersonal">
+            <End Role="JobProviderPersonal" EntitySet="JobProviderPersonals" />
+            <End Role="Message" EntitySet="Messages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_JobSeeker" Association="UpWorkDBModel.FK_Message_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="Message" EntitySet="Messages" />
+          </AssociationSet>
+          <EntitySet Name="Categories" EntityType="UpWorkDBModel.Category" />
+          <AssociationSet Name="FK_Category_JobSeeker" Association="UpWorkDBModel.FK_Category_JobSeeker">
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+            <End Role="Category" EntitySet="Categories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JobSeeker_ToTable" Association="UpWorkDBModel.FK_JobSeeker_ToTable">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="JobSeeker" EntitySet="JobSeekers" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="JobProviderPersonal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="NID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PassportNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BirthDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nationnality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="JobProviderCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PostJobs" Relationship="UpWorkDBModel.FK_PostJob_JobProviderPersonal" FromRole="JobProviderPersonal" ToRole="PostJob" />
+          <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobProviderPersonal" FromRole="JobProviderPersonal" ToRole="Message" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="JobProviderCompany">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegistrationNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegistrationCopy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PostJobs" Relationship="UpWorkDBModel.FK_PostJob_JobProviderCompany" FromRole="JobProviderCompany" ToRole="PostJob" />
+          <Property Name="CompanyLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobProviderCompany" FromRole="JobProviderCompany" ToRole="Message" />
+          <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PostJob">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="JobResponsibility" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DeadLineDate" Type="DateTime" Precision="7" />
+          <Property Name="CoverPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Payment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RegDate" Type="DateTime" Precision="7" />
+          <Property Name="PersonalId" Type="Int32" />
+          <Property Name="CompanyId" Type="Int32" />
+          <NavigationProperty Name="JobProviderCompany" Relationship="UpWorkDBModel.FK_PostJob_JobProviderCompany" FromRole="PostJob" ToRole="JobProviderCompany" />
+          <NavigationProperty Name="JobProviderPersonal" Relationship="UpWorkDBModel.FK_PostJob_JobProviderPersonal" FromRole="PostJob" ToRole="JobProviderPersonal" />
+          <Property Name="JobCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AppliedJobSeekers" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_PostJob" FromRole="PostJob" ToRole="AppliedJobSeeker" />
+          <NavigationProperty Name="SelectedJobSeekers" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_PostJob" FromRole="PostJob" ToRole="SelectedJobSeeker" />
+          <NavigationProperty Name="CompleteJobs" Relationship="UpWorkDBModel.FK_CompleteJob_PostJob" FromRole="PostJob" ToRole="CompleteJob" />
+          <Property Name="Per" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="JobTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Notifications" Relationship="UpWorkDBModel.FK_Notification_PostJob" FromRole="PostJob" ToRole="Notification" />
+        </EntityType>
+        <Association Name="FK_PostJob_JobProviderCompany">
+          <End Type="UpWorkDBModel.JobProviderCompany" Role="JobProviderCompany" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostJob">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PostJob_JobProviderPersonal">
+          <End Type="UpWorkDBModel.JobProviderPersonal" Role="JobProviderPersonal" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderPersonal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PostJob">
+              <PropertyRef Name="PersonalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AppliedJobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobSeekerId" Type="Int32" />
+          <Property Name="PostJobId" Type="Int32" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker" FromRole="AppliedJobSeeker" ToRole="JobSeeker" />
+          <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_PostJob" FromRole="AppliedJobSeeker" ToRole="PostJob" />
+          <Property Name="YourSay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_AppliedJobSeeker_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.AppliedJobSeeker" Role="AppliedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AppliedJobSeeker">
+              <PropertyRef Name="JobSeekerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AppliedJobSeeker_PostJob">
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.AppliedJobSeeker" Role="AppliedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AppliedJobSeeker">
+              <PropertyRef Name="PostJobId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SelectedJobSeeker">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobSeekerSelectedId" Type="Int32" />
+          <Property Name="PostJobSelectedId" Type="Int32" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker" FromRole="SelectedJobSeeker" ToRole="JobSeeker" />
+          <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_PostJob" FromRole="SelectedJobSeeker" ToRole="PostJob" />
+          <Property Name="ReviewForIncomplete" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ReviewForComplete" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_SelectedJobSeeker_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.SelectedJobSeeker" Role="SelectedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SelectedJobSeeker">
+              <PropertyRef Name="JobSeekerSelectedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SelectedJobSeeker_PostJob">
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.SelectedJobSeeker" Role="SelectedJobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SelectedJobSeeker">
+              <PropertyRef Name="PostJobSelectedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CompleteJob">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobSeekerCompleteId" Type="Int32" />
+          <Property Name="PostJobCompleteId" Type="Int32" />
+          <Property Name="Review" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_CompleteJob_JobSeeker" FromRole="CompleteJob" ToRole="JobSeeker" />
+          <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_CompleteJob_PostJob" FromRole="CompleteJob" ToRole="PostJob" />
+        </EntityType>
+        <Association Name="FK_CompleteJob_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.CompleteJob" Role="CompleteJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CompleteJob">
+              <PropertyRef Name="JobSeekerCompleteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CompleteJob_PostJob">
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.CompleteJob" Role="CompleteJob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CompleteJob">
+              <PropertyRef Name="PostJobCompleteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Notification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobSeekerNotificationId" Type="Int32" />
+          <Property Name="PostJobNotificationId" Type="Int32" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Notification_JobSeeker" FromRole="Notification" ToRole="JobSeeker" />
+          <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_Notification_PostJob" FromRole="Notification" ToRole="PostJob" />
+          <Property Name="PostedDate" Type="DateTime" Precision="7" />
+        </EntityType>
+        <Association Name="FK_Notification_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Notification" Role="Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="JobSeekerNotificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notification_PostJob">
+          <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Notification" Role="Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PostJob">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="PostJobNotificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobSeekerMessageId" Type="Int32" />
+          <Property Name="JobProviderPersonalMessageId" Type="Int32" />
+          <Property Name="JobProviderCompanyMessageId" Type="Int32" />
+          <Property Name="Msg" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="JobProviderCompany" Relationship="UpWorkDBModel.FK_Message_JobProviderCompany" FromRole="Message" ToRole="JobProviderCompany" />
+          <NavigationProperty Name="JobProviderPersonal" Relationship="UpWorkDBModel.FK_Message_JobProviderPersonal" FromRole="Message" ToRole="JobProviderPersonal" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Message_JobSeeker" FromRole="Message" ToRole="JobSeeker" />
+          <Property Name="Sender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Receiver" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SendingDate" Type="DateTime" Precision="7" />
+        </EntityType>
+        <Association Name="FK_Message_JobProviderCompany">
+          <End Type="UpWorkDBModel.JobProviderCompany" Role="JobProviderCompany" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobProviderCompanyMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_JobProviderPersonal">
+          <End Type="UpWorkDBModel.JobProviderPersonal" Role="JobProviderPersonal" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobProviderPersonal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobProviderPersonalMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="JobSeekerMessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="JobSeekerCategoryId" Type="Int32" />
+          <Property Name="HouseTutorClassPlay_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorClass6_8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorClass9_10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorClass11_12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorPhysics" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorMath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorChemistry" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorBangla" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorEnglish" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorICT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HouseTutorAccounting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DataEntryBasicLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DataEntrySecondaryLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DataEntryHigherLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EventManagerCorporateMeeting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EventManagerFamilyMeeting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EventManagerParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhotographyPortrait" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhotographyParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhotographyFamily" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhotographyInstitution" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="GraphicsDesignPhotoshop" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="GraphicsDesignIllustrator" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TransporterBothWay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TransporterOneWay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AdditionalDirectorFilm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AdditionalDirectorShortFilm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AdditionalDirectorDocumentary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantBusinessTransformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantEngineeringConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantEducationalConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantHumanResourcesConsultants" Type="String" />
+          <Property Name="ConsultantImmigrationConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantInternetConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantInformation_TechnologyConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantInterimManagers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantMarketingConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantProcessConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantPublic_relationsConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantPerformanceConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantSalesConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ConsultantStrategyConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Consultant3DConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="WebDesignStatic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="WebDesignDynamic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Category_JobSeeker" FromRole="Category" ToRole="JobSeeker" />
+          <NavigationProperty Name="JobSeekers" Relationship="UpWorkDBModel.FK_JobSeeker_ToTable" FromRole="Category" ToRole="JobSeeker" />
+        </EntityType>
+        <Association Name="FK_Category_JobSeeker">
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.Category" Role="Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobSeeker">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Category">
+              <PropertyRef Name="JobSeekerCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JobSeeker_ToTable">
+          <End Type="UpWorkDBModel.Category" Role="Category" Multiplicity="0..1" />
+          <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="JobSeeker">
+              <PropertyRef Name="CategoryTryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UpWorkDBModelStoreContainer" CdmEntityContainer="UpWorkDBEntities">
+          <EntitySetMapping Name="JobSeekers">
+            <EntityTypeMapping TypeName="UpWorkDBModel.JobSeeker">
+              <MappingFragment StoreEntitySet="JobSeeker">
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="AvailableEnd" ColumnName="AvailableEnd" />
+                <ScalarProperty Name="AvailableStart" ColumnName="AvailableStart" />
+                <ScalarProperty Name="CategoryTryId" ColumnName="CategoryTryId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Nationnality" ColumnName="Nationnality" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="CommentBox" ColumnName="CommentBox" />
+                <ScalarProperty Name="JobSeekerCode" ColumnName="JobSeekerCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobProviderPersonals">
+            <EntityTypeMapping TypeName="UpWorkDBModel.JobProviderPersonal">
+              <MappingFragment StoreEntitySet="JobProviderPersonal">
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="JobProviderCode" ColumnName="JobProviderCode" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Nationnality" ColumnName="Nationnality" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+                <ScalarProperty Name="NID" ColumnName="NID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobProviderCompanies">
+            <EntityTypeMapping TypeName="UpWorkDBModel.JobProviderCompany">
+              <MappingFragment StoreEntitySet="JobProviderCompany">
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="CompanyWebsite" ColumnName="CompanyWebsite" />
+                <ScalarProperty Name="RegistrationCopy" ColumnName="RegistrationCopy" />
+                <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PostJobs">
+            <EntityTypeMapping TypeName="UpWorkDBModel.PostJob">
+              <MappingFragment StoreEntitySet="PostJob">
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="Per" ColumnName="Per" />
+                <ScalarProperty Name="JobCode" ColumnName="JobCode" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="PersonalId" ColumnName="PersonalId" />
+                <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+                <ScalarProperty Name="Payment" ColumnName="Payment" />
+                <ScalarProperty Name="CoverPhoto" ColumnName="CoverPhoto" />
+                <ScalarProperty Name="DeadLineDate" ColumnName="DeadLineDate" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="JobResponsibility" ColumnName="JobResponsibility" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AppliedJobSeekers">
+            <EntityTypeMapping TypeName="UpWorkDBModel.AppliedJobSeeker">
+              <MappingFragment StoreEntitySet="AppliedJobSeeker">
+                <ScalarProperty Name="YourSay" ColumnName="YourSay" />
+                <ScalarProperty Name="PostJobId" ColumnName="PostJobId" />
+                <ScalarProperty Name="JobSeekerId" ColumnName="JobSeekerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SelectedJobSeekers">
+            <EntityTypeMapping TypeName="UpWorkDBModel.SelectedJobSeeker">
+              <MappingFragment StoreEntitySet="SelectedJobSeeker">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ReviewForComplete" ColumnName="ReviewForComplete" />
+                <ScalarProperty Name="ReviewForIncomplete" ColumnName="ReviewForIncomplete" />
+                <ScalarProperty Name="PostJobSelectedId" ColumnName="PostJobSelectedId" />
+                <ScalarProperty Name="JobSeekerSelectedId" ColumnName="JobSeekerSelectedId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompleteJobs">
+            <EntityTypeMapping TypeName="UpWorkDBModel.CompleteJob">
+              <MappingFragment StoreEntitySet="CompleteJob">
+                <ScalarProperty Name="Review" ColumnName="Review" />
+                <ScalarProperty Name="PostJobCompleteId" ColumnName="PostJobCompleteId" />
+                <ScalarProperty Name="JobSeekerCompleteId" ColumnName="JobSeekerCompleteId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notifications">
+            <EntityTypeMapping TypeName="UpWorkDBModel.Notification">
+              <MappingFragment StoreEntitySet="Notification">
+                <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="PostJobNotificationId" ColumnName="PostJobNotificationId" />
+                <ScalarProperty Name="JobSeekerNotificationId" ColumnName="JobSeekerNotificationId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Messages">
+            <EntityTypeMapping TypeName="UpWorkDBModel.Message">
+              <MappingFragment StoreEntitySet="Message">
+                <ScalarProperty Name="SendingDate" ColumnName="SendingDate" />
+                <ScalarProperty Name="Receiver" ColumnName="Receiver" />
+                <ScalarProperty Name="Sender" ColumnName="Sender" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="JobProviderCompanyMessageId" ColumnName="JobProviderCompanyMessageId" />
+                <ScalarProperty Name="JobProviderPersonalMessageId" ColumnName="JobProviderPersonalMessageId" />
+                <ScalarProperty Name="JobSeekerMessageId" ColumnName="JobSeekerMessageId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="UpWorkDBModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="WebDesignDynamic" ColumnName="WebDesignDynamic" />
+                <ScalarProperty Name="WebDesignStatic" ColumnName="WebDesignStatic" />
+                <ScalarProperty Name="Consultant3DConsultants" ColumnName="Consultant3DConsultants" />
+                <ScalarProperty Name="ConsultantStrategyConsultants" ColumnName="ConsultantStrategyConsultants" />
+                <ScalarProperty Name="ConsultantSalesConsultants" ColumnName="ConsultantSalesConsultants" />
+                <ScalarProperty Name="ConsultantPerformanceConsultants" ColumnName="ConsultantPerformanceConsultants" />
+                <ScalarProperty Name="ConsultantPublic_relationsConsultants" ColumnName="ConsultantPublic-relationsConsultants" />
+                <ScalarProperty Name="ConsultantProcessConsultants" ColumnName="ConsultantProcessConsultants" />
+                <ScalarProperty Name="ConsultantMarketingConsultants" ColumnName="ConsultantMarketingConsultants" />
+                <ScalarProperty Name="ConsultantInterimManagers" ColumnName="ConsultantInterimManagers" />
+                <ScalarProperty Name="ConsultantInformation_TechnologyConsultants" ColumnName="ConsultantInformation-TechnologyConsultants" />
+                <ScalarProperty Name="ConsultantInternetConsultants" ColumnName="ConsultantInternetConsultants" />
+                <ScalarProperty Name="ConsultantImmigrationConsultants" ColumnName="ConsultantImmigrationConsultants" />
+                <ScalarProperty Name="ConsultantHumanResourcesConsultants" ColumnName="ConsultantHumanResourcesConsultants" />
+                <ScalarProperty Name="ConsultantEducationalConsultants" ColumnName="ConsultantEducationalConsultants" />
+                <ScalarProperty Name="ConsultantEngineeringConsultants" ColumnName="ConsultantEngineeringConsultants" />
+                <ScalarProperty Name="ConsultantBusinessTransformation" ColumnName="ConsultantBusinessTransformation" />
+                <ScalarProperty Name="AdditionalDirectorDocumentary" ColumnName="AdditionalDirectorDocumentary" />
+                <ScalarProperty Name="AdditionalDirectorShortFilm" ColumnName="AdditionalDirectorShortFilm" />
+                <ScalarProperty Name="AdditionalDirectorFilm" ColumnName="AdditionalDirectorFilm" />
+                <ScalarProperty Name="TransporterOneWay" ColumnName="TransporterOneWay" />
+                <ScalarProperty Name="TransporterBothWay" ColumnName="TransporterBothWay" />
+                <ScalarProperty Name="GraphicsDesignIllustrator" ColumnName="GraphicsDesignIllustrator" />
+                <ScalarProperty Name="GraphicsDesignPhotoshop" ColumnName="GraphicsDesignPhotoshop" />
+                <ScalarProperty Name="PhotographyInstitution" ColumnName="PhotographyInstitution" />
+                <ScalarProperty Name="PhotographyFamily" ColumnName="PhotographyFamily" />
+                <ScalarProperty Name="PhotographyParty" ColumnName="PhotographyParty" />
+                <ScalarProperty Name="PhotographyPortrait" ColumnName="PhotographyPortrait" />
+                <ScalarProperty Name="EventManagerParty" ColumnName="EventManagerParty" />
+                <ScalarProperty Name="EventManagerFamilyMeeting" ColumnName="EventManagerFamilyMeeting" />
+                <ScalarProperty Name="EventManagerCorporateMeeting" ColumnName="EventManagerCorporateMeeting" />
+                <ScalarProperty Name="DataEntryHigherLevel" ColumnName="DataEntryHigherLevel" />
+                <ScalarProperty Name="DataEntrySecondaryLevel" ColumnName="DataEntrySecondaryLevel" />
+                <ScalarProperty Name="DataEntryBasicLevel" ColumnName="DataEntryBasicLevel" />
+                <ScalarProperty Name="HouseTutorAccounting" ColumnName="HouseTutorAccounting" />
+                <ScalarProperty Name="HouseTutorICT" ColumnName="HouseTutorICT" />
+                <ScalarProperty Name="HouseTutorEnglish" ColumnName="HouseTutorEnglish" />
+                <ScalarProperty Name="HouseTutorBangla" ColumnName="HouseTutorBangla" />
+                <ScalarProperty Name="HouseTutorChemistry" ColumnName="HouseTutorChemistry" />
+                <ScalarProperty Name="HouseTutorMath" ColumnName="HouseTutorMath" />
+                <ScalarProperty Name="HouseTutorPhysics" ColumnName="HouseTutorPhysics" />
+                <ScalarProperty Name="HouseTutorClass11_12" ColumnName="HouseTutorClass11-12" />
+                <ScalarProperty Name="HouseTutorClass9_10" ColumnName="HouseTutorClass9-10" />
+                <ScalarProperty Name="HouseTutorClass6_8" ColumnName="HouseTutorClass6-8" />
+                <ScalarProperty Name="HouseTutorClassPlay_5" ColumnName="HouseTutorClassPlay-5" />
+                <ScalarProperty Name="JobSeekerCategoryId" ColumnName="JobSeekerCategoryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

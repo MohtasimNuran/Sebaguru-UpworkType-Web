@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98c3d1a9ad6f40cb8eacf1e388f804e2" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="UpWorkDBModel.JobSeeker" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UpWorkDBModel.JobProviderPersonal" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UpWorkDBModel.JobProviderCompany" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UpWorkDBModel.PostJob" Width="1.5" PointX="7.625" PointY="0.875" />
+        <AssociationConnector Association="UpWorkDBModel.FK_PostJob_JobProviderCompany" />
+        <AssociationConnector Association="UpWorkDBModel.FK_PostJob_JobProviderPersonal" />
+        <EntityTypeShape EntityType="UpWorkDBModel.AppliedJobSeeker" Width="1.5" PointX="9.875" PointY="0.75" />
+        <AssociationConnector Association="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker" />
+        <AssociationConnector Association="UpWorkDBModel.FK_AppliedJobSeeker_PostJob" />
+        <EntityTypeShape EntityType="UpWorkDBModel.SelectedJobSeeker" Width="1.5" PointX="9.875" PointY="4.875" />
+        <AssociationConnector Association="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker" />
+        <AssociationConnector Association="UpWorkDBModel.FK_SelectedJobSeeker_PostJob" />
+        <EntityTypeShape EntityType="UpWorkDBModel.CompleteJob" Width="1.5" PointX="12.875" PointY="2.25" />
+        <AssociationConnector Association="UpWorkDBModel.FK_CompleteJob_JobSeeker" />
+        <AssociationConnector Association="UpWorkDBModel.FK_CompleteJob_PostJob" />
+        <EntityTypeShape EntityType="UpWorkDBModel.Notification" Width="1.5" PointX="14.5" PointY="0.875" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Notification_JobSeeker" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Notification_PostJob" />
+        <EntityTypeShape EntityType="UpWorkDBModel.Message" Width="1.5" PointX="4.125" PointY="6.875" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Message_JobProviderCompany" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Message_JobProviderPersonal" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Message_JobSeeker" />
+        <EntityTypeShape EntityType="UpWorkDBModel.Category" Width="1.5" PointX="3" PointY="11" />
+        <AssociationConnector Association="UpWorkDBModel.FK_Category_JobSeeker" />
+        <AssociationConnector Association="UpWorkDBModel.FK_JobSeeker_ToTable" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

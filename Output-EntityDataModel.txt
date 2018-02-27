@@ -1,0 +1,6 @@
+﻿Generated model file: UpWorkDB.edmx.
+Loading metadata from the database took 00:00:03.9540329.
+Generating the model took 00:00:02.7641481.
+Generated model file: UpWorkDB.edmx.
+Loading metadata from the database took 00:00:00.7327955.
+Generating the model took 00:00:01.6311430.

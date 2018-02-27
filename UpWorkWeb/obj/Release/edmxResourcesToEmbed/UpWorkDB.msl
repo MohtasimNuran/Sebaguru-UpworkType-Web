@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UpWorkDBModelStoreContainer" CdmEntityContainer="UpWorkDBEntities">
+    <EntitySetMapping Name="JobSeekers">
+      <EntityTypeMapping TypeName="UpWorkDBModel.JobSeeker">
+        <MappingFragment StoreEntitySet="JobSeeker">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="AvailableEnd" ColumnName="AvailableEnd" />
+          <ScalarProperty Name="AvailableStart" ColumnName="AvailableStart" />
+          <ScalarProperty Name="CategoryTryId" ColumnName="CategoryTryId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Nationnality" ColumnName="Nationnality" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="CommentBox" ColumnName="CommentBox" />
+          <ScalarProperty Name="JobSeekerCode" ColumnName="JobSeekerCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobProviderPersonals">
+      <EntityTypeMapping TypeName="UpWorkDBModel.JobProviderPersonal">
+        <MappingFragment StoreEntitySet="JobProviderPersonal">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="JobProviderCode" ColumnName="JobProviderCode" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Nationnality" ColumnName="Nationnality" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="NID" ColumnName="NID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobProviderCompanies">
+      <EntityTypeMapping TypeName="UpWorkDBModel.JobProviderCompany">
+        <MappingFragment StoreEntitySet="JobProviderCompany">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="PaymentProcedure" ColumnName="PaymentProcedure" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="CompanyWebsite" ColumnName="CompanyWebsite" />
+          <ScalarProperty Name="RegistrationCopy" ColumnName="RegistrationCopy" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostJobs">
+      <EntityTypeMapping TypeName="UpWorkDBModel.PostJob">
+        <MappingFragment StoreEntitySet="PostJob">
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="Per" ColumnName="Per" />
+          <ScalarProperty Name="JobCode" ColumnName="JobCode" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PersonalId" ColumnName="PersonalId" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="CoverPhoto" ColumnName="CoverPhoto" />
+          <ScalarProperty Name="DeadLineDate" ColumnName="DeadLineDate" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="JobResponsibility" ColumnName="JobResponsibility" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppliedJobSeekers">
+      <EntityTypeMapping TypeName="UpWorkDBModel.AppliedJobSeeker">
+        <MappingFragment StoreEntitySet="AppliedJobSeeker">
+          <ScalarProperty Name="YourSay" ColumnName="YourSay" />
+          <ScalarProperty Name="PostJobId" ColumnName="PostJobId" />
+          <ScalarProperty Name="JobSeekerId" ColumnName="JobSeekerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SelectedJobSeekers">
+      <EntityTypeMapping TypeName="UpWorkDBModel.SelectedJobSeeker">
+        <MappingFragment StoreEntitySet="SelectedJobSeeker">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ReviewForComplete" ColumnName="ReviewForComplete" />
+          <ScalarProperty Name="ReviewForIncomplete" ColumnName="ReviewForIncomplete" />
+          <ScalarProperty Name="PostJobSelectedId" ColumnName="PostJobSelectedId" />
+          <ScalarProperty Name="JobSeekerSelectedId" ColumnName="JobSeekerSelectedId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompleteJobs">
+      <EntityTypeMapping TypeName="UpWorkDBModel.CompleteJob">
+        <MappingFragment StoreEntitySet="CompleteJob">
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="PostJobCompleteId" ColumnName="PostJobCompleteId" />
+          <ScalarProperty Name="JobSeekerCompleteId" ColumnName="JobSeekerCompleteId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="UpWorkDBModel.Notification">
+        <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PostJobNotificationId" ColumnName="PostJobNotificationId" />
+          <ScalarProperty Name="JobSeekerNotificationId" ColumnName="JobSeekerNotificationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="UpWorkDBModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="SendingDate" ColumnName="SendingDate" />
+          <ScalarProperty Name="Receiver" ColumnName="Receiver" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="JobProviderCompanyMessageId" ColumnName="JobProviderCompanyMessageId" />
+          <ScalarProperty Name="JobProviderPersonalMessageId" ColumnName="JobProviderPersonalMessageId" />
+          <ScalarProperty Name="JobSeekerMessageId" ColumnName="JobSeekerMessageId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="UpWorkDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="WebDesignDynamic" ColumnName="WebDesignDynamic" />
+          <ScalarProperty Name="WebDesignStatic" ColumnName="WebDesignStatic" />
+          <ScalarProperty Name="Consultant3DConsultants" ColumnName="Consultant3DConsultants" />
+          <ScalarProperty Name="ConsultantStrategyConsultants" ColumnName="ConsultantStrategyConsultants" />
+          <ScalarProperty Name="ConsultantSalesConsultants" ColumnName="ConsultantSalesConsultants" />
+          <ScalarProperty Name="ConsultantPerformanceConsultants" ColumnName="ConsultantPerformanceConsultants" />
+          <ScalarProperty Name="ConsultantPublic_relationsConsultants" ColumnName="ConsultantPublic-relationsConsultants" />
+          <ScalarProperty Name="ConsultantProcessConsultants" ColumnName="ConsultantProcessConsultants" />
+          <ScalarProperty Name="ConsultantMarketingConsultants" ColumnName="ConsultantMarketingConsultants" />
+          <ScalarProperty Name="ConsultantInterimManagers" ColumnName="ConsultantInterimManagers" />
+          <ScalarProperty Name="ConsultantInformation_TechnologyConsultants" ColumnName="ConsultantInformation-TechnologyConsultants" />
+          <ScalarProperty Name="ConsultantInternetConsultants" ColumnName="ConsultantInternetConsultants" />
+          <ScalarProperty Name="ConsultantImmigrationConsultants" ColumnName="ConsultantImmigrationConsultants" />
+          <ScalarProperty Name="ConsultantHumanResourcesConsultants" ColumnName="ConsultantHumanResourcesConsultants" />
+          <ScalarProperty Name="ConsultantEducationalConsultants" ColumnName="ConsultantEducationalConsultants" />
+          <ScalarProperty Name="ConsultantEngineeringConsultants" ColumnName="ConsultantEngineeringConsultants" />
+          <ScalarProperty Name="ConsultantBusinessTransformation" ColumnName="ConsultantBusinessTransformation" />
+          <ScalarProperty Name="AdditionalDirectorDocumentary" ColumnName="AdditionalDirectorDocumentary" />
+          <ScalarProperty Name="AdditionalDirectorShortFilm" ColumnName="AdditionalDirectorShortFilm" />
+          <ScalarProperty Name="AdditionalDirectorFilm" ColumnName="AdditionalDirectorFilm" />
+          <ScalarProperty Name="TransporterOneWay" ColumnName="TransporterOneWay" />
+          <ScalarProperty Name="TransporterBothWay" ColumnName="TransporterBothWay" />
+          <ScalarProperty Name="GraphicsDesignIllustrator" ColumnName="GraphicsDesignIllustrator" />
+          <ScalarProperty Name="GraphicsDesignPhotoshop" ColumnName="GraphicsDesignPhotoshop" />
+          <ScalarProperty Name="PhotographyInstitution" ColumnName="PhotographyInstitution" />
+          <ScalarProperty Name="PhotographyFamily" ColumnName="PhotographyFamily" />
+          <ScalarProperty Name="PhotographyParty" ColumnName="PhotographyParty" />
+          <ScalarProperty Name="PhotographyPortrait" ColumnName="PhotographyPortrait" />
+          <ScalarProperty Name="EventManagerParty" ColumnName="EventManagerParty" />
+          <ScalarProperty Name="EventManagerFamilyMeeting" ColumnName="EventManagerFamilyMeeting" />
+          <ScalarProperty Name="EventManagerCorporateMeeting" ColumnName="EventManagerCorporateMeeting" />
+          <ScalarProperty Name="DataEntryHigherLevel" ColumnName="DataEntryHigherLevel" />
+          <ScalarProperty Name="DataEntrySecondaryLevel" ColumnName="DataEntrySecondaryLevel" />
+          <ScalarProperty Name="DataEntryBasicLevel" ColumnName="DataEntryBasicLevel" />
+          <ScalarProperty Name="HouseTutorAccounting" ColumnName="HouseTutorAccounting" />
+          <ScalarProperty Name="HouseTutorICT" ColumnName="HouseTutorICT" />
+          <ScalarProperty Name="HouseTutorEnglish" ColumnName="HouseTutorEnglish" />
+          <ScalarProperty Name="HouseTutorBangla" ColumnName="HouseTutorBangla" />
+          <ScalarProperty Name="HouseTutorChemistry" ColumnName="HouseTutorChemistry" />
+          <ScalarProperty Name="HouseTutorMath" ColumnName="HouseTutorMath" />
+          <ScalarProperty Name="HouseTutorPhysics" ColumnName="HouseTutorPhysics" />
+          <ScalarProperty Name="HouseTutorClass11_12" ColumnName="HouseTutorClass11-12" />
+          <ScalarProperty Name="HouseTutorClass9_10" ColumnName="HouseTutorClass9-10" />
+          <ScalarProperty Name="HouseTutorClass6_8" ColumnName="HouseTutorClass6-8" />
+          <ScalarProperty Name="HouseTutorClassPlay_5" ColumnName="HouseTutorClassPlay-5" />
+          <ScalarProperty Name="JobSeekerCategoryId" ColumnName="JobSeekerCategoryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="upworktry-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mohta\\Desktop\\UpWorkWeb\\UpWorkWeb\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\mohta\\Desktop\\UpWorkWeb\\UpWorkWeb\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="UpWorkDBEntities-Web.config Connection String" description="UpWorkDBEntities Connection String used in web.config by the application to access the database." value="Server=SQL7001.site4now.net;&#xD;&#xA;                            Database=DB_A2CA7C_upworktry;&#xD;&#xA;                            User ID=DB_A2CA7C_upworktry_admin;&#xD;&#xA;                            Password=sadikasneha1366;&#xD;&#xA;                            Trusted_Connection=False;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mohta\\Desktop\\UpWorkWeb\\UpWorkWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UpWorkDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

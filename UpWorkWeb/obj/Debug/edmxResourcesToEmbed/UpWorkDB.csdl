@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UpWorkDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="JobSeeker">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Full_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Birthdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Nationnality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CommentBox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="JobSeekerCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AppliedJobSeekers" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker" FromRole="JobSeeker" ToRole="AppliedJobSeeker" />
+    <NavigationProperty Name="SelectedJobSeekers" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker" FromRole="JobSeeker" ToRole="SelectedJobSeeker" />
+    <NavigationProperty Name="CompleteJobs" Relationship="UpWorkDBModel.FK_CompleteJob_JobSeeker" FromRole="JobSeeker" ToRole="CompleteJob" />
+    <NavigationProperty Name="Notifications" Relationship="UpWorkDBModel.FK_Notification_JobSeeker" FromRole="JobSeeker" ToRole="Notification" />
+    <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobSeeker" FromRole="JobSeeker" ToRole="Message" />
+    <NavigationProperty Name="Categories" Relationship="UpWorkDBModel.FK_Category_JobSeeker" FromRole="JobSeeker" ToRole="Category" />
+    <Property Name="CategoryTryId" Type="Int32" />
+    <NavigationProperty Name="Category1" Relationship="UpWorkDBModel.FK_JobSeeker_ToTable" FromRole="JobSeeker" ToRole="Category" />
+    <Property Name="AvailableStart" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AvailableEnd" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="UpWorkDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="JobSeekers" EntityType="Self.JobSeeker" />
+    <EntitySet Name="JobProviderPersonals" EntityType="UpWorkDBModel.JobProviderPersonal" />
+    <EntitySet Name="JobProviderCompanies" EntityType="UpWorkDBModel.JobProviderCompany" />
+    <EntitySet Name="PostJobs" EntityType="UpWorkDBModel.PostJob" />
+    <AssociationSet Name="FK_PostJob_JobProviderCompany" Association="UpWorkDBModel.FK_PostJob_JobProviderCompany">
+      <End Role="JobProviderCompany" EntitySet="JobProviderCompanies" />
+      <End Role="PostJob" EntitySet="PostJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostJob_JobProviderPersonal" Association="UpWorkDBModel.FK_PostJob_JobProviderPersonal">
+      <End Role="JobProviderPersonal" EntitySet="JobProviderPersonals" />
+      <End Role="PostJob" EntitySet="PostJobs" />
+    </AssociationSet>
+    <EntitySet Name="AppliedJobSeekers" EntityType="UpWorkDBModel.AppliedJobSeeker" />
+    <AssociationSet Name="FK_AppliedJobSeeker_JobSeeker" Association="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeekers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppliedJobSeeker_PostJob" Association="UpWorkDBModel.FK_AppliedJobSeeker_PostJob">
+      <End Role="PostJob" EntitySet="PostJobs" />
+      <End Role="AppliedJobSeeker" EntitySet="AppliedJobSeekers" />
+    </AssociationSet>
+    <EntitySet Name="SelectedJobSeekers" EntityType="UpWorkDBModel.SelectedJobSeeker" />
+    <AssociationSet Name="FK_SelectedJobSeeker_JobSeeker" Association="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeekers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SelectedJobSeeker_PostJob" Association="UpWorkDBModel.FK_SelectedJobSeeker_PostJob">
+      <End Role="PostJob" EntitySet="PostJobs" />
+      <End Role="SelectedJobSeeker" EntitySet="SelectedJobSeekers" />
+    </AssociationSet>
+    <EntitySet Name="CompleteJobs" EntityType="UpWorkDBModel.CompleteJob" />
+    <AssociationSet Name="FK_CompleteJob_JobSeeker" Association="UpWorkDBModel.FK_CompleteJob_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="CompleteJob" EntitySet="CompleteJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompleteJob_PostJob" Association="UpWorkDBModel.FK_CompleteJob_PostJob">
+      <End Role="PostJob" EntitySet="PostJobs" />
+      <End Role="CompleteJob" EntitySet="CompleteJobs" />
+    </AssociationSet>
+    <EntitySet Name="Notifications" EntityType="UpWorkDBModel.Notification" />
+    <AssociationSet Name="FK_Notification_JobSeeker" Association="UpWorkDBModel.FK_Notification_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="Notification" EntitySet="Notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notification_PostJob" Association="UpWorkDBModel.FK_Notification_PostJob">
+      <End Role="PostJob" EntitySet="PostJobs" />
+      <End Role="Notification" EntitySet="Notifications" />
+    </AssociationSet>
+    <EntitySet Name="Messages" EntityType="UpWorkDBModel.Message" />
+    <AssociationSet Name="FK_Message_JobProviderCompany" Association="UpWorkDBModel.FK_Message_JobProviderCompany">
+      <End Role="JobProviderCompany" EntitySet="JobProviderCompanies" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_JobProviderPersonal" Association="UpWorkDBModel.FK_Message_JobProviderPersonal">
+      <End Role="JobProviderPersonal" EntitySet="JobProviderPersonals" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_JobSeeker" Association="UpWorkDBModel.FK_Message_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <EntitySet Name="Categories" EntityType="UpWorkDBModel.Category" />
+    <AssociationSet Name="FK_Category_JobSeeker" Association="UpWorkDBModel.FK_Category_JobSeeker">
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobSeeker_ToTable" Association="UpWorkDBModel.FK_JobSeeker_ToTable">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="JobSeeker" EntitySet="JobSeekers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="JobProviderPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PassportNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BirthDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Nationnality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="JobProviderCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PostJobs" Relationship="UpWorkDBModel.FK_PostJob_JobProviderPersonal" FromRole="JobProviderPersonal" ToRole="PostJob" />
+    <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobProviderPersonal" FromRole="JobProviderPersonal" ToRole="Message" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="JobProviderCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegistrationNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegistrationCopy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PostJobs" Relationship="UpWorkDBModel.FK_PostJob_JobProviderCompany" FromRole="JobProviderCompany" ToRole="PostJob" />
+    <Property Name="CompanyLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Messages" Relationship="UpWorkDBModel.FK_Message_JobProviderCompany" FromRole="JobProviderCompany" ToRole="Message" />
+    <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="PaymentProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PostJob">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="JobResponsibility" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DeadLineDate" Type="DateTime" Precision="7" />
+    <Property Name="CoverPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Payment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegDate" Type="DateTime" Precision="7" />
+    <Property Name="PersonalId" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <NavigationProperty Name="JobProviderCompany" Relationship="UpWorkDBModel.FK_PostJob_JobProviderCompany" FromRole="PostJob" ToRole="JobProviderCompany" />
+    <NavigationProperty Name="JobProviderPersonal" Relationship="UpWorkDBModel.FK_PostJob_JobProviderPersonal" FromRole="PostJob" ToRole="JobProviderPersonal" />
+    <Property Name="JobCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AppliedJobSeekers" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_PostJob" FromRole="PostJob" ToRole="AppliedJobSeeker" />
+    <NavigationProperty Name="SelectedJobSeekers" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_PostJob" FromRole="PostJob" ToRole="SelectedJobSeeker" />
+    <NavigationProperty Name="CompleteJobs" Relationship="UpWorkDBModel.FK_CompleteJob_PostJob" FromRole="PostJob" ToRole="CompleteJob" />
+    <Property Name="Per" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="JobTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Notifications" Relationship="UpWorkDBModel.FK_Notification_PostJob" FromRole="PostJob" ToRole="Notification" />
+  </EntityType>
+  <Association Name="FK_PostJob_JobProviderCompany">
+    <End Type="UpWorkDBModel.JobProviderCompany" Role="JobProviderCompany" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobProviderCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PostJob">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostJob_JobProviderPersonal">
+    <End Type="UpWorkDBModel.JobProviderPersonal" Role="JobProviderPersonal" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobProviderPersonal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PostJob">
+        <PropertyRef Name="PersonalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AppliedJobSeeker">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobSeekerId" Type="Int32" />
+    <Property Name="PostJobId" Type="Int32" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_JobSeeker" FromRole="AppliedJobSeeker" ToRole="JobSeeker" />
+    <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_AppliedJobSeeker_PostJob" FromRole="AppliedJobSeeker" ToRole="PostJob" />
+    <Property Name="YourSay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_AppliedJobSeeker_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.AppliedJobSeeker" Role="AppliedJobSeeker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AppliedJobSeeker">
+        <PropertyRef Name="JobSeekerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppliedJobSeeker_PostJob">
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.AppliedJobSeeker" Role="AppliedJobSeeker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostJob">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AppliedJobSeeker">
+        <PropertyRef Name="PostJobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SelectedJobSeeker">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobSeekerSelectedId" Type="Int32" />
+    <Property Name="PostJobSelectedId" Type="Int32" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_JobSeeker" FromRole="SelectedJobSeeker" ToRole="JobSeeker" />
+    <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_SelectedJobSeeker_PostJob" FromRole="SelectedJobSeeker" ToRole="PostJob" />
+    <Property Name="ReviewForIncomplete" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReviewForComplete" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_SelectedJobSeeker_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.SelectedJobSeeker" Role="SelectedJobSeeker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SelectedJobSeeker">
+        <PropertyRef Name="JobSeekerSelectedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SelectedJobSeeker_PostJob">
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.SelectedJobSeeker" Role="SelectedJobSeeker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostJob">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SelectedJobSeeker">
+        <PropertyRef Name="PostJobSelectedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CompleteJob">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobSeekerCompleteId" Type="Int32" />
+    <Property Name="PostJobCompleteId" Type="Int32" />
+    <Property Name="Review" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_CompleteJob_JobSeeker" FromRole="CompleteJob" ToRole="JobSeeker" />
+    <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_CompleteJob_PostJob" FromRole="CompleteJob" ToRole="PostJob" />
+  </EntityType>
+  <Association Name="FK_CompleteJob_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.CompleteJob" Role="CompleteJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CompleteJob">
+        <PropertyRef Name="JobSeekerCompleteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompleteJob_PostJob">
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.CompleteJob" Role="CompleteJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostJob">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CompleteJob">
+        <PropertyRef Name="PostJobCompleteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobSeekerNotificationId" Type="Int32" />
+    <Property Name="PostJobNotificationId" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Notification_JobSeeker" FromRole="Notification" ToRole="JobSeeker" />
+    <NavigationProperty Name="PostJob" Relationship="UpWorkDBModel.FK_Notification_PostJob" FromRole="Notification" ToRole="PostJob" />
+    <Property Name="PostedDate" Type="DateTime" Precision="7" />
+  </EntityType>
+  <Association Name="FK_Notification_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Notification" Role="Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="JobSeekerNotificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notification_PostJob">
+    <End Type="UpWorkDBModel.PostJob" Role="PostJob" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Notification" Role="Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostJob">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="PostJobNotificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobSeekerMessageId" Type="Int32" />
+    <Property Name="JobProviderPersonalMessageId" Type="Int32" />
+    <Property Name="JobProviderCompanyMessageId" Type="Int32" />
+    <Property Name="Msg" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="JobProviderCompany" Relationship="UpWorkDBModel.FK_Message_JobProviderCompany" FromRole="Message" ToRole="JobProviderCompany" />
+    <NavigationProperty Name="JobProviderPersonal" Relationship="UpWorkDBModel.FK_Message_JobProviderPersonal" FromRole="Message" ToRole="JobProviderPersonal" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Message_JobSeeker" FromRole="Message" ToRole="JobSeeker" />
+    <Property Name="Sender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Receiver" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SendingDate" Type="DateTime" Precision="7" />
+  </EntityType>
+  <Association Name="FK_Message_JobProviderCompany">
+    <End Type="UpWorkDBModel.JobProviderCompany" Role="JobProviderCompany" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobProviderCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="JobProviderCompanyMessageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_JobProviderPersonal">
+    <End Type="UpWorkDBModel.JobProviderPersonal" Role="JobProviderPersonal" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobProviderPersonal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="JobProviderPersonalMessageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="JobSeekerMessageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="JobSeekerCategoryId" Type="Int32" />
+    <Property Name="HouseTutorClassPlay_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorClass6_8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorClass9_10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorClass11_12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorPhysics" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorMath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorChemistry" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorBangla" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorEnglish" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorICT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HouseTutorAccounting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataEntryBasicLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataEntrySecondaryLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataEntryHigherLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EventManagerCorporateMeeting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EventManagerFamilyMeeting" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EventManagerParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhotographyPortrait" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhotographyParty" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhotographyFamily" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhotographyInstitution" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GraphicsDesignPhotoshop" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GraphicsDesignIllustrator" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TransporterBothWay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TransporterOneWay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AdditionalDirectorFilm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AdditionalDirectorShortFilm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AdditionalDirectorDocumentary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantBusinessTransformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantEngineeringConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantEducationalConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantHumanResourcesConsultants" Type="String" />
+    <Property Name="ConsultantImmigrationConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantInternetConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantInformation_TechnologyConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantInterimManagers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantMarketingConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantProcessConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantPublic_relationsConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantPerformanceConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantSalesConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsultantStrategyConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Consultant3DConsultants" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WebDesignStatic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WebDesignDynamic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="JobSeeker" Relationship="UpWorkDBModel.FK_Category_JobSeeker" FromRole="Category" ToRole="JobSeeker" />
+    <NavigationProperty Name="JobSeekers" Relationship="UpWorkDBModel.FK_JobSeeker_ToTable" FromRole="Category" ToRole="JobSeeker" />
+  </EntityType>
+  <Association Name="FK_Category_JobSeeker">
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.Category" Role="Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobSeeker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="JobSeekerCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobSeeker_ToTable">
+    <End Type="UpWorkDBModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="UpWorkDBModel.JobSeeker" Role="JobSeeker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobSeeker">
+        <PropertyRef Name="CategoryTryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
